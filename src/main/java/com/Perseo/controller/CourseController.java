@@ -9,14 +9,14 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1/course")
+@RequestMapping("/api/course")
 @CrossOrigin
 
 public class CourseController {
     @Autowired
     CourseService courseService;
 
-    @PostMapping(path = "")
+    @PostMapping(path = "/create")
     public Course createCourse(@RequestBody Course course) {
         return courseService.createCourse(course);
 
@@ -33,13 +33,13 @@ public class CourseController {
 
     }
 
-    @PutMapping(path = "/{id}")
+    @PutMapping(path = "update/{id}")
     public void  updateCourse(@RequestBody Course course, @PathVariable int id){
         courseService.updateCourse(course, id);
 
     }
 
-    @DeleteMapping(path = "/{id}")
+    @DeleteMapping(path = "delete/{id}")
     public String deleteCourseById(@PathVariable int id) {
         boolean ok = courseService.deleteCourse(id);
 

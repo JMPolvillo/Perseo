@@ -9,7 +9,7 @@ import lombok.Setter;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "Course")
+@Table(name = "Experience")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -24,7 +24,7 @@ public class Experience {
     private String title;
 
     @Column(name = "CompanyName")
-    private int companyname;
+    private String companyname;
 
     @Column(name = "StartDate", nullable = false)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")

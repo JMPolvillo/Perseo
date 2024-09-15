@@ -9,14 +9,14 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1/experience")
+@RequestMapping("/api/experience")
 @CrossOrigin
 
 public class ExperienceController {
     @Autowired
     ExperienceService experienceService;
 
-    @PostMapping(path = "")
+    @PostMapping(path = "create")
     public Experience createExperience(@RequestBody Experience experience) {
         return experienceService.createExperience(experience);
 
@@ -33,20 +33,20 @@ public class ExperienceController {
 
     }
 
-    @PutMapping(path = "/{id}")
+    @PutMapping(path = "update/{id}")
     public void  updateExperience(@RequestBody Experience experience, @PathVariable int id){
         experienceService.updateExperienceById(experience, id);
 
     }
 
-    @DeleteMapping(path = "/{id}")
+    @DeleteMapping(path = "delete/{id}")
     public String deleteCourseById(@PathVariable int id) {
         boolean ok = experienceService.deleteExperienceById(id);
 
         if (ok) {
-            return "Donation with id " + id + " was deleted";
+            return "Experience with id " + id + " was deleted";
         } else {
-            return "Donation with id " + id + " not found";
+            return "Experience with id " + id + " not found";
         }
     }
 }

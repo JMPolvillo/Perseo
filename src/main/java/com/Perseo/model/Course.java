@@ -21,13 +21,10 @@ public class Course {
     private String title;
 
     @Column(name = "Description")
-    private int description;
+    private String description;
 
-    @Column(name = "Breed")
-    private String breed;
-
-    @Column(name = "Gender")
-    private String gender;
+    @Column(name = "Price")
+    private int price;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user", referencedColumnName = "id", nullable = false)
