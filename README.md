@@ -13,7 +13,7 @@ Asterion is a platform where you can sell online courses to programmers who use 
 
 ## Organization
 
-The organization and diagram for the project is shown in the [Jira Table](https://sofiaramirezleiva157.atlassian.net/jira/software/projects/AS/boards/2)) of the project.
+The organization and diagram for the project is shown in this [link](https://)) of the project.
 
 
 ## Project Objectives:
