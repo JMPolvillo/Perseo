@@ -13,7 +13,7 @@ Asterion is a platform where you can sell online courses to programmers who use 
 
 ## Organization
 
-The organization and diagram for the project is shown in this [link](https://)) of the project.
+The organization and diagram for the project is shown in this [link](https://) of the project.
 
 
 ## Project Objectives:
